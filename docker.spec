@@ -7,22 +7,22 @@
 # NOTES
 # https://github.com/docker/docker/blob/master/project/PACKAGERS.md#build-dependencies
 
-# v1.0.0-rc2-8-gf59ba3c
-%define	runc_commit f59ba3c
+# v1.0.0-rc2-9-g50a19c6
+%define	runc_commit 50a19c6
 # v0.2.4-10-g2a5e70c
 %define	containerd_commit 2a5e70c
 #define	subver -rc2
 Summary:	Docker: the open-source application container engine
 Name:		docker
-Version:	1.12.4
+Version:	1.12.6
 Release:	1
 License:	Apache v2.0
 Group:		Applications/System
 # https://github.com/docker/docker/releases
 Source0:	https://github.com/docker/docker/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	fecf7c780468bbbc40c1d472dd21dc3f
+# Source0-md5:	2db317ab9811641449784fe0fb29d74f
 Source1:	https://github.com/docker/runc/archive/%{runc_commit}/runc-%{runc_commit}.tar.gz
-# Source1-md5:	9347487a8e855229bf9ca1a928625223
+# Source1-md5:	b8f0f19983f641c53a997a58b37dc63e
 Source2:	https://github.com/docker/containerd/archive/%{containerd_commit}/containerd-%{containerd_commit}.tar.gz
 # Source2-md5:	143556e1e7a4e8fa678dce1e0b766e12
 Source4:	%{name}d.sh
