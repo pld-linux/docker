@@ -17,7 +17,7 @@
 Summary:	Docker: the open-source application container engine
 Name:		docker
 Version:	1.13.1
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Applications/System
 # https://github.com/docker/docker/releases
@@ -59,6 +59,7 @@ Suggests:	docker-credential-helpers
 Suggests:	git-core >= 1.7
 Suggests:	libcgroup
 Suggests:	xz >= 1:4.9
+Provides:	docker(engine) = %{version}
 Provides:	group(docker)
 Obsoletes:	lxc-docker < 1.1.1
 # only runs on x64 hosts for now:
