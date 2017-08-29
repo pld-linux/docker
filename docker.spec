@@ -1,4 +1,7 @@
 #
+# abandoned, since 17.x, use docker-ce.spec
+# https://blog.docker.com/2017/04/introducing-the-moby-project/
+#
 # Conditional build:
 %bcond_with	tests		# build without tests
 %bcond_with	vim			# build vim syntax package (bundled in vim 7.4.979-2)
