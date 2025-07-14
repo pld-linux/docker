@@ -142,7 +142,7 @@ mv runc-%{runc_commit}* runc
 mv containerd-%{containerd_commit}* containerd
 mv libnetwork-%{libnetwork_commit}* libnetwork
 mv tini-* tini
-%patch0 -p1
+%patch -P0 -p1
 
 install -d vendor/src/github.com/docker
 ln -s $(pwd) vendor/src/github.com/docker/docker
